@@ -1,17 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basic PicSum Photos API Fetch Demo - Alvison Hunter</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="css/styles.css">
-</head>
-<body onload="retrieveData();">
-<div class="main_title my-3">Basic PicSum Photos API Fetch Demo</div>
-<div class="unsplash">--</div>
-<script src="js/getData.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic PicSum Photos API Fetch Demo - Alvison Hunter</title>
+    <meta name="author" content="Alvison Lucas Hunter Arnuero" />
+    <meta
+      name="description"
+      content="We build fully responsive web apps, marketing campaigns, graphic design requests for the most demanding customers. Let's talk about your business needs."
+    />
+    <meta
+      name="Keywords"
+      lang="es"
+      content="desarrollador Web, agencia de diseño web, desarrollo web nicaragua, páginas web nicaragua, diseño web nicaragua, diseñador grafico nicaragua"
+    />
+    <meta
+      name="Keywords"
+      lang="en-us"
+      content="react native website developer, custom website design nicaragua, react & vue web development,motion graphics nicaragua,javascript online developers,digital marketing email marketing influencer"
+    />
+
+    <!-- Robots, caching and expirations management for my website -->
+    <meta name="”robots”" content="”index," follow” />
+    <meta http-equiv="expires" content="Mon, 12 Jul 2021 11:12:01 GMT" />
+    <meta http-equiv="cache-control" content="public, max-age=604800" />
+    <meta name="copyright" content="&copy; 2021 by Alvison Hunter Arnuero" />
+    <meta name="googlebot" content="index,follow,archive,snippet" />
+    <meta name="googlebot-news" content="index,follow" />
+    <meta name="referrer" content="none-when-downgrade" />
+    <meta name="locality" content="Managua, Nicaragua" />
+    <meta
+      name="google-site-verification"
+      content="v34BQBfd5TIhTqCxmIDodFO_YZdNrQQv1kyVvCGkfbk"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- My Twitter Summary Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@allwissendjager" />
+    <meta name="twitter:creator" content="@allwissendjager" />
+    <meta
+      name="twitter:title"
+      content="JavaScript & Python Developer | Alvison Hunter"
+    />
+    <meta
+      name="twitter:description"
+      content="We build fully responsive web apps, custom branding products and graphic design requests for the most demanding customers. Let's get in touch to talk about business at once!"
+    />
+    <meta
+      name="twitter:image"
+      content="http://alvisonhunter.com/imgs/ahunter.png"
+    />
+    <!-- OPEN GRAPH TAGS -->
+    <meta property="og:title" content="JavaScript & Python Developer" />
+    <meta
+      property="og:site_name"
+      content="JavaScript & Python Developer | Alvison Hunter"
+    />
+    <meta property="og:url" content="https://alvisonhunter.com/" />
+    <meta
+      property="og:description"
+      content="We build fully responsive web apps, marketing campaigns, graphic design requests for the most demanding customers. Let's talk about your business needs."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://alvisonhunter.com/imgs/ahunter.webp"
+    />
+    <!-- END OF OPEN GRAPH TAGS -->
+
+    <link rel="canonical" href="https://alvisonhunter.com/" />
+    <link href=”https://g.page/alvison-hunter-arnuero?gm” rel=”publisher” />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    \
+    <link rel="manifest" href="/manifest.json" />
+    <script type="application/ld+json">
+      {
+        "@context": "http://www.schema.org",
+        "@type": "WebSite",
+        "name": "Alvison Hunter Arnuero",
+        "alternateName": "Alvison Hunter",
+        "url": "http://alvisonhunter.com/"
+      }
+    </script>
+  </head>
+  <body onload="retrieveData();">
+    <h1 class="main_title my-3">Basic PicSum Photos API Fetch Demo</h1>
+
+    <div class="unsplash row justify-content-center">
+      <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <script src="js/getData.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
