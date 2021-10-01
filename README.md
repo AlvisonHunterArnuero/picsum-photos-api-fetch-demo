@@ -3,3 +3,4 @@ This is just a basic sample on how to use the PicSum Photos API to retrieve a se
 only with the purpose of showing the use of the Fetch API to get data from external sites.
 
 **Link to PicSum Photos API:** https://picsum.photos/
+**Powered By:** https://alvisonhunter.com/
