@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:300);
+@import url(https://fonts.googleapis.com/css?family=Architects+Daughter:400);
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #212121;
+  font-family: "Inconsolata", monospace;
+}
+
+.main_title {
+  color: #b2bb1e;
+  display: block;
+  height: 80px;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.author_name {
+  font-family: "Architects Daughter", cursive;
+}
+
+.filtered:hover {
+  -webkit-filter: grayscale(85%);
+  filter: grayscale(85%);
+  opacity: 0.6;
+  transition: 0.5s;
+  cursor: pointer;
+}
