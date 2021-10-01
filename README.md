@@ -3,9 +3,25 @@ This is just a basic sample on how to use the PicSum Photos API to retrieve a se
 only with the purpose of showing the use of the Fetch API to get data from external sites.
 - - -
 
-GHPAGE SITE DEMO: https://alvisonhunterarnuero.github.io/picsum-photos-api-fetch-demo/
+SITE DEMO: https://alvisonhunterarnuero.github.io/picsum-photos-api-fetch-demo/
 
 - - -
 
-**Link to PicSum Photos API:** https://picsum.photos \s\s
+## Dependencies
+PicSum Photos API fetch currently extended with the following dependencies.
+
+| Dependency | Where to get it |
+| ------ | ------ |
+| Bootstrap 5 | [Get Bootstrap 5][BS5] |
+| Font Awesome 5 | [Get Font Awesome 5][FA5] |
+
+**Link to PicSum Photos API:** https://picsum.photos
 **Powered By:** https://alvisonhunter.com/
+
+## License
+MIT
+
+**Free for all, fellows!**
+
+[BS5]: <https://getbootstrap.com/docs/5.0/getting-started/introduction/>
+[FA5]: <https://fontawesome.com/>
