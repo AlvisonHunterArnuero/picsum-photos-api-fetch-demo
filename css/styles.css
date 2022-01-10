@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:500);
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:300);
 @import url(https://fonts.googleapis.com/css?family=Architects+Daughter:400);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap);
 
 body {
   margin: 0;
@@ -12,9 +13,9 @@ body {
 
 .main_title {
   color: #b2bb1e;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   text-align: center;
-  font-size: 4rem;
+  font-size: 2.8rem;
   font-weight: 300;
   line-height: 1.2;
 }
